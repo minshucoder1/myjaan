@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Minshu and Pammy aniversery Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .video-container {
+          position: relative;
+          width:auto;
+          padding-top: 100%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+        }
+        .video-container video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Minshu <span class="text-primary">&</span> Pammy</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#story" class="nav-item nav-link">Story</a>
+                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Minshu <span class="text-primary">&</span> Pammy</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#family" class="nav-item nav-link">Family</a>
+                <a href="#event" class="nav-item nav-link">Event</a>
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Minshu & Pammy</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Our love Anniversery</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Minshu & Pammy</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Our love Anniversery</h3>
+                            </div>
+                            <audio id="mySong" src="love.mp3" autoplay loop></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About</h6>
+                <h1 class="font-secondary display-4">Groom & Bride</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Groom</h3>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Minshu</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/minshukumar4/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Bride</h3>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Pammy</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square mr-1" href="https://www.instagram.com/pammy.mishra.106/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
+                <h1 class="font-secondary display-4">Our Love Story</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">First Meet</h4>
+                            <p class="text-uppercase mb-2">01 Dec 2022 9:21 AM</p>
+                            <p class="m-0">First meet on Instagram as a unknown person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">First Relation</h4>
+                            <p class="text-uppercase mb-2">12 Jan 2023</p>She Accept first time me as a Normal Friend. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Proposal</h4>
+                            <p class="text-uppercase mb-2">17 April 2023</p>
+                            <p class="m-0">Finally this day I bring Courage To Propose and Finally Propose her in the reply of Proposal she blocked me at a time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Remeet</h4>
+                            <p class="text-uppercase mb-2">18 May 2023</p>
+                            <p class="m-0">She unblocked Me And send me hlo msg. I Can't Beleive That she Unblocked me. We continue to talk . Want to know some twist ?
+                                <br> At this time she accept me as a bestfriend and she also called me her smile. i still can't know the reason behind it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-5.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Proposal</h4>
+                            <p class="text-uppercase mb-2">15 nov 2023</p>
+                            <p class="m-0">At this day I am going to propose her again with Courage and Also with fear and finally Propose her.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Proposal Accept</h4>
+                            <p class="text-uppercase mb-2">27 Nov 2023 7:28 PM</p>
+                            <p class="m-0">After Her many Terms and Condition and answering her many Question finally she become my love and she accept me as her Love.
+                                <br> This was the day i can't forget. This is very special for me.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-7.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">4th Month Anniversery</h4>
+                            <p class="text-uppercase mb-2">27 Mar 2024</p>
+                            <p class="m-0">Today we have spend finally 4 month together with love, happiness , and Also after many fight but after every fight our love for each othe increases as many.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">5th month anniversery</h4>
+                            <p class="text-uppercase mb-2">27 April 2024</p>
+                            <p class="m-0">Today we have spend finally 5 month together. we fight with each other many time in this month but we finally know that we cant live without each other. 26 april is that day when i was fully alone and i know that how i spent the whole day without talking with her. my headache is started and that day i sleep in the afternoon with her pic on my laptop . i request to god that please do not return this type of day in our life.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-8.jpg" alt="">
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-right">
+                    <img class="img-fluid mr-md-3" src="img/story-9.jpg" alt="">
+                </div>
+                <div class="col-md-6 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                        <h4 class="mb-2">6th Month Anniversery</h4>
+                        <p class="text-uppercase mb-2">27 May 2024</p>
+                        <p class="m-0">This month is very special for me because in this month on 1 may we meet each other finally. Also we spent 2 day together . we went many places together and enjoy very much. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                        <h4 class="mb-2">7th month anniversery</h4>
+                        <p class="text-uppercase mb-2">27 June 2024</p>
+                        <p class="m-0">Today we have spend finally 7 month together. we fight with each other many time in this month. I hurt her very much . I don't want to hurt her . i am really sorry bachha . She is very possesive for me . in this month we not talk much together because something is happen in my home . i am sorry bachha please forgive me .
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-left">
+                    <img class="img-fluid ml-md-3" src="img/story-10.jpg" alt="">
+                </div>
+        </div>
+                 <div class="row">
+                <div class="col-md-6 text-center text-md-right">
+                    <img class="img-fluid mr-md-3" src="img/story-11.jpg" alt="">
+                </div>
+                <div class="col-md-6 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                        <h4 class="mb-2">8th Month Anniversery</h4>
+                        <p class="text-uppercase mb-2">27 July 2024</p>
+                        <p class="m-0">Happy 8th month anniversery bachha you are so much cute in this month she behave like a princess and she care very much about me thanks you so much bachha for coming in my life </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                        <h4 class="mb-2">9th month anniversery</h4>
+                        <p class="text-uppercase mb-2">27 august 2024</p>
+                        <p class="m-0">Today we have spend finally 9 month together. Is month me humari baat kam hui hai kyuki mai is month me deoghar gya hua tha aur uska centre pe 15 august ki tyaari ho rahi thi meko bas thoda bura laga tha ki maine usko bola tha ki mere birthday me mere saath time spend karne mese jyada baat karne but wo available nhi thi lekin 15 august ko usko radha bante dekha toh mai sab kuch bhul gya wo bahut preety lag rahi thi very cure lag rahi thi lagegi q nhi radha kiski hai meri h n 25 august ko mai usko bahut happy dekha uska mehendi bahut din ke baad bahut red hua tha bhagwan kare ki uski face pe aisi happy hamesha rahe please bhagwan ye pura kar dijiye. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-left">
+                    <img class="img-fluid ml-md-3" src="img/story-12.jpg" alt="">
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center text-md-right">
+                <img class="img-fluid mr-md-3" src="img/13.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-center text-md-left">
+                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                    <h4 class="mb-2">10th Month Anniversery</h4>
+                    <p class="text-uppercase mb-2">27 september 2024</p>
+                    <p class="m-0">Happy 10th month anniversery bachha you are so much cute in this month because starting month se ghum rahi thi smile is always on your face in this month but kuch kuch din tu sad bhi thi</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center text-md-right">
+                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                    <h4 class="mb-2">11th month anniversery</h4>
+                    <p class="text-uppercase mb-2">27 october 2024</p>
+                    <p class="m-0">Today we have spend finally 11 month together. is mahine mai first time uske yha gya usse milne uske saath time spent kiya ghuma.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-md-left">
+                <img class="img-fluid ml-md-3" src="img/14.jpg" alt="">
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-center text-md-right">
+            <div class="video-container">
+                <video controls muted>
+                  <source src="img/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="col-md-6 text-center text-md-left">
+            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                <h4 class="mb-2">1 Year Anniversery</h4>
+                <p class="text-uppercase mb-2">27 november 2024</p>
+                <p class="m-0">Happy anniversery bachha maine first Anniversery per usko khud se handmade gift diya jisse uske face pe real waali smile mujhe dekhne ko mili wo us gift ko dekh ke bahut khush hui thi tab jaake meko meri mehnat ka fal uski pyaari se smile ke saath thanks sunne me mila bhagwan kare wo hamesha aise hi happy aur smile karte rahe.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
+            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+
+    <!-- Friends & Family Start -->
+    <div class="container-fluid py-5" id="family">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Family</h6>
+                <h1 class="font-secondary display-4">Groomsmen & Bridesmaid</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Groomsmen</li>
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Bridesmaid</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">NAVIN KUMAR</h4>
+                            <p class="text-uppercase">Father</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">SUKESH MISHRA</h4>
+                            <p class="text-uppercase">FATHER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Sima Devi</h4>
+                            <p class="text-uppercase">Mother</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Pinki Devi</h4>
+                            <p class="text-uppercase">Mother</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Radhika Kumari</h4>
+                            <p class="text-uppercase">Sister</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Priya Mishra</h4>
+                            <p class="text-uppercase">Sister</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="https://www.instagram.com/priya._._mishra/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-4.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Pallavi Kumari</h4>
+                            <p class="text-uppercase">Sister</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="https://www.instagram.com/c_u_t_e_g_i_r_l_3_2_1/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-5.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Divyanshu Kumar</h4>
+                            <p class="text-uppercase">Brother</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Friends & Family End --><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <!-- RSVP Start -->
+    <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Join Our Party</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <form action="#" method="POST" class="formcarry-form">
+                            <!-- With this -->
+                            <form action="form-process.php" method="POST" class="formcarry-form">
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name"/>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Email"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>Number of Guest</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>I'm Attending</option>
+                                        <option>All Events</option>
+                                        <option>Wedding Party</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#">MinshuCoder</a>. Designed by <a class="text-primary" href="#">MinshuCoder</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+ 
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("click", function() {
+  const audio = document.getElementById("mySong");
+  audio.play();
+}, { once: true });
+      </script>
+    
+</body>
+
+</html>
